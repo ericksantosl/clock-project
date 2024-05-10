@@ -22,3 +22,17 @@ const clock = setInterval(function time() {
     minutes.textContent = min
     seconds.textContent = sec
 })
+
+let rail = document.querySelector('div#rail')
+let body = document.querySelector('body')
+let boxOne = document.querySelector('div.boxOne')
+let boxTwo = document.querySelector('div.boxTwo')
+let boxThree = document.querySelector('div.boxThree')
+
+rail.addEventListener('click', ()=>{
+    rail.classList.toggle('dark')
+    body.classList.toggle('dark')
+    boxOne.classList.toggle('dark')
+    boxTwo.classList.toggle('dark')
+    boxThree.classList.toggle('dark')
+})
